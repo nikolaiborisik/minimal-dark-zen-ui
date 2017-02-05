@@ -27,21 +27,22 @@
 @green:     #859900;
 
 // Text Colors
-@text-color:           @base0;
-@text-color-subtle:    @base1;
-@text-color-highlight: lighten(@base0, 5%);
-@text-color-selected: lighten(@base0, 10%);
+@text-color:           lighten(@base0, 15%);
+@text-color-subtle:    lighten(@base1, 10%);
+@text-color-highlight: lighten(@text-color, 5%);
+@text-color-selected: lighten(@text-color, 10%);
+
 
 @text-color-info:    @violet;
 @text-color-success: @green;
-@text-color-warning: @orange;
+@text-color-warning: @base0;
 @text-color-error:   @red;
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-info:    @blue;//hsl(208, 100%, 50%);
+@background-color-success: @cyan;//hsl(160,  70%, 36%);
+@background-color-warning: @orange;//hsl(32,   60%, 50%);
+@background-color-error:   @red;// hsl(0,    70%, 50%);
 
 @background-color-highlight: lighten(@base-background-color, 5%);
 @background-color-selected:  lighten(@base-background-color, 10%);
@@ -70,7 +71,7 @@
 @overlay-background-color: lighten(@base-background-color, 5%);
 @overlay-border-color:     @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
+@button-background-color:          lighten(@base-background-color, 5%);
 @button-background-color-hover:    lighten(@button-background-color, 12%);
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
