@@ -1,0 +1,40 @@
+
+// Base
+// -------------------
+
+// Used for global styles
+// Or to override certain Atom core styles
+
+// -------------------
+
+
+body {
+  font-size: @font-size;
+  color: @text-color;
+  background-color: @app-background-color;
+}
+
+atom-pane {
+  border-right: 1px solid @base-border-color;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.scrollbars-visible-always {
+  /deep/ ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  /deep/ ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-corner {
+    background: @scrollbar-background-color;
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb {
+    background: @scrollbar-color;
+    border-radius: 2px;
+    box-shadow: 0 0 1px black inset;
+  }
+}

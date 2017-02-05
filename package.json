@@ -1,0 +1,17 @@
+{
+  "name": "minimal-zen-ui",
+  "theme": "ui",
+  "version": "0.0.1",
+  "description": "Minimal dark ui theme",
+  "keywords": [
+    "ui",
+    "theme",
+    "minimal",
+    "dark"
+  ],
+  "repository": "https://github.com/n1k0laj/minimal-zen-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
