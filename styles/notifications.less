@@ -1,0 +1,25 @@
+atom-notifications{
+  display: flex;
+  align-items:flex-end;
+  padding-bottom: 25px;
+
+}
+atom-notification{
+  width: 300px;
+  max-height: 300px;
+  padding-left: 0;
+  opacity: 0.2;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+atom-notifications atom-notification:only-child.has-close .message{
+  padding-right: 10px;
+}
+atom-notification .message{
+  max-height: 150px;
+}
+atom-notification.icon:before{
+  display: none;
+}
