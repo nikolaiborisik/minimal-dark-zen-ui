@@ -1,2 +1,3 @@
 # Minimal ui theme for Atom
+![Screenshot of the theme](https://i.imgsafe.org/9c78a20436.png)
 Work in progress...
