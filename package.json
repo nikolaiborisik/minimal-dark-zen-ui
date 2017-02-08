@@ -1,8 +1,8 @@
 {
-  "name": "minimal-dark-zen-ui",
+  "name": "minimal-zen-ui",
   "theme": "ui",
-  "version": "0.2.0",
-  "description": "Minimal dark ui theme",
+  "version": "0.0.4",
+  "description": "Minimal dark UI theme for distraction free coding. Clean and flat UI, solarized base colors",
   "keywords": [
     "ui",
     "theme",
