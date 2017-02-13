@@ -1,17 +1,29 @@
-atom-panel.modal .select-list.fuzzy-finder ol.list-group li {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0.1em 0.5em;
+atom-panel.modal {
+  atom-text-editor[mini] {
+    margin-top: 0;
+  }
 
-    > .file {
-        width: 100%;
-    }
+  .select-list.fuzzy-finder {
+    ol.list-group {
+      margin-top: 4px;
 
-    > .path {
-        width: 100%;
-    }
+      li {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0.1em 0.5em;
 
-    > .status {
-        margin: 0;
+        > .file {
+          width: 100%;
+        }
+
+        > .path {
+          width: 100%;
+        }
+
+        > .status {
+          margin: 0;
+        }
+      }
     }
+  }
 }

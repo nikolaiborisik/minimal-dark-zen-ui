@@ -1,113 +1,81 @@
-
 // UI Variables
 // -------------------
-
 // These are the official UI variables that every UI theme should define.
 // It allows other packages to match your theme.
-
 // Overrides: atom/static/variables/ui-variables.less
-
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
-@base03:    #002b36;
-@base02:    #073642;
-@base01:    #586e75;
-@base00:    #657b83;
-@base0:     #839496;
-@base1:     #93a1a1;
-@base2:     #eee8d5;
-@base3:     #fdf6e3;
-@yellow:    #b58900;
-@orange:    #cb4b16;
-@red:       #dc322f;
-@magenta:   #d33682;
-@violet:    #6c71c4;
-@blue:      #268bd2;
-@cyan:      #2aa198;
-@green:     #859900;
-
-// Text Colors
-@text-color:           lighten(@base0, 15%);
-@text-color-subtle:    lighten(@base1, 10%);
+@base03: #002b36;
+@base02: #073642;
+@base01: #586e75;
+@base00: #657b83;
+@base0: #839496;
+@base1: #93a1a1;
+@base2: #eee8d5;
+@base3: #fdf6e3;
+@yellow: #b58900;
+@orange: #cb4b16;
+@red: #dc322f;
+@magenta: #d33682;
+@violet: #6c71c4;
+@blue: #268bd2;
+@cyan: #2aa198;
+@green: #859900; // Text Colors
+@text-color: lighten(@base0, 15%);
+@text-color-subtle: lighten(@base1, 10%);
 @text-color-highlight: lighten(@text-color, 5%);
 @text-color-selected: lighten(@text-color, 10%);
-
-
-@text-color-info:    @violet;
+@text-color-info: @violet;
 @text-color-success: @green;
 @text-color-warning: @base0;
-@text-color-error:   @red;
-
-// Background colors
-@background-color-info:    @blue;//hsl(208, 100%, 50%);
-@background-color-success: @cyan;//hsl(160,  70%, 36%);
-@background-color-warning: @orange;//hsl(32,   60%, 50%);
-@background-color-error:   @red;// hsl(0,    70%, 50%);
-
+@text-color-error: @red; // Background colors
+@background-color-info: @blue; //hsl(208, 100%, 50%);
+@background-color-success: @cyan; //hsl(160,  70%, 36%);
+@background-color-warning: @orange; //hsl(32,   60%, 50%);
+@background-color-error: @red; // hsl(0,    70%, 50%);
 @background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
-
-// Base colors
-@base-background-color:  @base03;//hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
-
-// Component colors
+@background-color-selected: lighten(@base-background-color, 10%);
+@app-background-color: darken(@base-background-color, 1%); // Base colors
+@base-background-color: @base03; //hsl(222,6%,22%);
+@base-border-color: darken(@base-background-color, 8%); // Component colors
 @pane-item-background-color: @base-background-color;
-@pane-item-border-color:     @base-border-color;
-
+@pane-item-border-color: @base-border-color;
 @input-background-color: @app-background-color;
-@input-border-color:     @base-border-color;
-
+@input-border-color: @base-border-color;
 @tool-panel-background-color: @base-background-color;
-@tool-panel-border-color:     @base-border-color;
-
+@tool-panel-border-color: @base-border-color;
 @inset-panel-background-color: lighten(@base-background-color, 4%);
-@inset-panel-border-color:     @base-border-color;
-
+@inset-panel-border-color: @base-border-color;
 @panel-heading-background-color: lighten(@base-background-color, 4%);
-@panel-heading-border-color:     @base-border-color;
-
+@panel-heading-border-color: @base-border-color;
 @overlay-background-color: lighten(@base-background-color, 5%);
-@overlay-border-color:     @base-border-color;
-
-@button-background-color:          lighten(@base-background-color, 5%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@overlay-border-color: @base-border-color;
+@button-background-color: lighten(@base-background-color, 5%);
+@button-background-color-hover: lighten(@button-background-color, 12%);
 @button-background-color-selected: @button-background-color-hover;
-@button-border-color:              @base-border-color;
-
-@tab-bar-background-color:    @base-background-color;
-@tab-bar-border-color:        @base-border-color;
-@tab-background-color:        @tab-bar-background-color;
+@button-border-color: @base-border-color;
+@tab-bar-background-color: @base-background-color;
+@tab-bar-border-color: @base-border-color;
+@tab-background-color: @tab-bar-background-color;
 @tab-background-color-active: lighten(@tab-bar-background-color, 10%);
-@tab-border-color:            @base-border-color;
-
+@tab-border-color: @base-border-color;
 @tree-view-background-color: @base-background-color;
-@tree-view-border-color:     @base-border-color;
-
-// Site colors
+@tree-view-border-color: @base-border-color; // Site colors
 @ui-site-color-1: @blue; // blue
 @ui-site-color-2: @cyan; // green
 @ui-site-color-3: @orange; // orange
-@ui-site-color-4: @magenta;             // pink
-@ui-site-color-5: @yellow;             // yellow
-
+@ui-site-color-4: @magenta; // pink
+@ui-site-color-5: @yellow; // yellow
 // Sizes
 @font-size: 12px;
 @input-font-size: 14px;
-
 @disclosure-arrow-size: 12px;
-
 @component-padding: 10px;
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
-
 @tab-height: 20px;
-
 @scrollbar-color: lighten( @base02, 12%);
-@scrollbar-background-color: @base02;
-
-// Misc
+@scrollbar-background-color: @base02; // Misc
 @component-border-radius: 0;
 @font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
