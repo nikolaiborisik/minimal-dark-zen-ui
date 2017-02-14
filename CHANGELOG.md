@@ -1,3 +1,5 @@
+## 0.2.3
+* Style modified tabs
 ## 0.2.2
 * Move fuzzu-finder from the top of the screen
 * Lighten input background
